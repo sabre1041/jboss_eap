@@ -103,7 +103,7 @@
 - name: Copy JBoss EAP Service File
   become: true
   copy:
-    src: "{{ jboss_eap_bin_dir }}/init.d/{{ jboss_eap_service_src_file} }"
+    src: "{{ jboss_eap_bin_dir }}/init.d/{{ jboss_eap_service_src_file }}"
     dest: "{{ jboss_instance_mktemp.path }}/{{ jboss_eap_service_file }}"
     remote_src: True
     owner: "{{ jboss_eap_user }}"
